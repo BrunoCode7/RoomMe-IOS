@@ -113,6 +113,7 @@ class AddRoomViewController: UIViewController,UIPickerViewDelegate, UIPickerView
             roomDictionary[Constants.userName] = name
         }else{
             showSimpleAlert(title: "Data missing", message: "Please add your full name")
+            self.activityIndicator.isHidden = true
             return
         }
         
@@ -121,6 +122,7 @@ class AddRoomViewController: UIViewController,UIPickerViewDelegate, UIPickerView
             roomDictionary[Constants.userPhoneNumber] = Int(phoneNumber)
         }else{
             showSimpleAlert(title: "Data missing", message: "Please add your phone number")
+            self.activityIndicator.isHidden = true
             return
         }
         
@@ -129,6 +131,7 @@ class AddRoomViewController: UIViewController,UIPickerViewDelegate, UIPickerView
             roomDictionary[Constants.userEmail] = userEmail
         }else{
             showSimpleAlert(title: "Data missing", message: "Please add your Email")
+            self.activityIndicator.isHidden = true
             return
         }
         
@@ -147,25 +150,28 @@ class AddRoomViewController: UIViewController,UIPickerViewDelegate, UIPickerView
         
         //apartment number
         if let apartmentNumber = apartmentNumberTextField.text?.trimmingCharacters(in: .whitespaces), !apartmentNumber.isEmpty{
-            roomDictionary[Constants.apartmentNumber] = apartmentNumber
+            roomDictionary[Constants.apartmentNumber] = Int(apartmentNumber)
         }else{
             showSimpleAlert(title: "Data missing", message: "Please add your apartment number")
+            self.activityIndicator.isHidden = true
             return
         }
         
         //number of room beds
         if let numberOfRoomBeds = numberOfRoomBedsTextField.text?.trimmingCharacters(in: .whitespaces), !numberOfRoomBeds.isEmpty{
-            roomDictionary[Constants.numberOfRoomBeds] = numberOfRoomBeds
+            roomDictionary[Constants.numberOfRoomBeds] = Int(numberOfRoomBeds)
         }else{
             showSimpleAlert(title: "Data missing", message: "Please add your number of room beds")
+            self.activityIndicator.isHidden = true
             return
         }
 
         //number of roommates
         if let numberOfRoommates = numberOfRoommatesTextField.text?.trimmingCharacters(in: .whitespaces), !numberOfRoommates.isEmpty{
-            roomDictionary[Constants.numberOfRoommates] = numberOfRoommates
+            roomDictionary[Constants.numberOfRoommates] = Int(numberOfRoommates)
         }else{
             showSimpleAlert(title: "Data missing", message: "Please add your number of roommates")
+            self.activityIndicator.isHidden = true
             return
         }
         
@@ -175,9 +181,10 @@ class AddRoomViewController: UIViewController,UIPickerViewDelegate, UIPickerView
         
         //number of bathrooms
         if let numberOfBathrooms = numberOfBathroomsTextField.text?.trimmingCharacters(in: .whitespaces), !numberOfBathrooms.isEmpty{
-            roomDictionary[Constants.numberOfBathrooms] = numberOfBathrooms
+            roomDictionary[Constants.numberOfBathrooms] = Int(numberOfBathrooms)
         }else{
             showSimpleAlert(title: "Data missing", message: "Please add your number of bathrooms")
+            self.activityIndicator.isHidden = true
             return
         }
     
@@ -198,6 +205,7 @@ class AddRoomViewController: UIViewController,UIPickerViewDelegate, UIPickerView
             roomDictionary[Constants.monthlySubscribtionFees] = Double(monthlySubscribtionFees)
         }else{
             showSimpleAlert(title: "Data missing", message: "Please add the room monthly subscribtion fees, if there is none please put 0")
+            self.activityIndicator.isHidden = true
             return
         }
         
@@ -205,6 +213,7 @@ class AddRoomViewController: UIViewController,UIPickerViewDelegate, UIPickerView
             roomDictionary[Constants.monthlyRent] = Double(monthlyRentValue)
         }else{
             showSimpleAlert(title: "Data missing", message: "Please add the room monthly rental")
+            self.activityIndicator.isHidden = true
             return
         }
         
@@ -212,6 +221,7 @@ class AddRoomViewController: UIViewController,UIPickerViewDelegate, UIPickerView
             roomDictionary[Constants.insuranceFees] = Double(insuranceFeesValue)
         }else{
             showSimpleAlert(title: "Data missing", message: "Please add the room insurance fees, if there is none please add 0")
+            self.activityIndicator.isHidden = true
             return
         }
         

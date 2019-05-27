@@ -11,7 +11,14 @@
 		ED4DFBCB22984F5D00D3722E /* AddRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DFBCA22984F5D00D3722E /* AddRoomViewController.swift */; };
 		ED4DFBCE2299870900D3722E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DFBCD2299870900D3722E /* Constants.swift */; };
 		ED4DFBD0229B40C300D3722E /* RoomDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DFBCF229B40C300D3722E /* RoomDetailsViewController.swift */; };
-		ED4DFBD2229B5EC200D3722E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DFBD1229B5EC200D3722E /* TableViewCell.swift */; };
+		ED4DFBD4229C205500D3722E /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = ED4DFBD3229C205500D3722E /* Readme.md */; };
+		ED4DFBDD229C26CE00D3722E /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = ED4DFBD6229C26C500D3722E /* 5.png */; };
+		ED4DFBDE229C26CE00D3722E /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = ED4DFBD7229C26C600D3722E /* 2.png */; };
+		ED4DFBDF229C26CE00D3722E /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED4DFBD8229C26C800D3722E /* 1.png */; };
+		ED4DFBE0229C26CE00D3722E /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = ED4DFBD9229C26C900D3722E /* 3.png */; };
+		ED4DFBE1229C26CE00D3722E /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = ED4DFBDA229C26CA00D3722E /* 4.png */; };
+		ED4DFBE2229C26CE00D3722E /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = ED4DFBDB229C26CC00D3722E /* 6.png */; };
+		ED4DFBE3229C26CE00D3722E /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = ED4DFBDC229C26CD00D3722E /* 7.png */; };
 		ED735DF622933F8A004D60D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED735DF522933F8A004D60D3 /* AppDelegate.swift */; };
 		ED735DF822933F8A004D60D3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED735DF722933F8A004D60D3 /* MapViewController.swift */; };
 		ED735DFB22933F8A004D60D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED735DF922933F8A004D60D3 /* Main.storyboard */; };
@@ -29,7 +36,14 @@
 		ED4DFBCA22984F5D00D3722E /* AddRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomViewController.swift; sourceTree = "<group>"; };
 		ED4DFBCD2299870900D3722E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ED4DFBCF229B40C300D3722E /* RoomDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailsViewController.swift; sourceTree = "<group>"; };
-		ED4DFBD1229B5EC200D3722E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		ED4DFBD3229C205500D3722E /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		ED4DFBD6229C26C500D3722E /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		ED4DFBD7229C26C600D3722E /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		ED4DFBD8229C26C800D3722E /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		ED4DFBD9229C26C900D3722E /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		ED4DFBDA229C26CA00D3722E /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		ED4DFBDB229C26CC00D3722E /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		ED4DFBDC229C26CD00D3722E /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
 		ED735DF222933F8A004D60D3 /* RoomMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoomMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED735DF522933F8A004D60D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED735DF722933F8A004D60D3 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -75,14 +89,29 @@
 			isa = PBXGroup;
 			children = (
 				ED4DFBCD2299870900D3722E /* Constants.swift */,
-				ED4DFBD1229B5EC200D3722E /* TableViewCell.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		ED4DFBD5229C265B00D3722E /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				ED4DFBD8229C26C800D3722E /* 1.png */,
+				ED4DFBD7229C26C600D3722E /* 2.png */,
+				ED4DFBD9229C26C900D3722E /* 3.png */,
+				ED4DFBDA229C26CA00D3722E /* 4.png */,
+				ED4DFBD6229C26C500D3722E /* 5.png */,
+				ED4DFBDB229C26CC00D3722E /* 6.png */,
+				ED4DFBDC229C26CD00D3722E /* 7.png */,
+			);
+			path = screenshots;
 			sourceTree = "<group>";
 		};
 		ED735DE922933F8A004D60D3 = {
 			isa = PBXGroup;
 			children = (
+				ED4DFBD5229C265B00D3722E /* screenshots */,
+				ED4DFBD3229C205500D3722E /* Readme.md */,
 				ED735DF422933F8A004D60D3 /* RoomMe */,
 				ED735DF322933F8A004D60D3 /* Products */,
 				1644C2F733C4590E8EFBC2B7 /* Pods */,
@@ -193,10 +222,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED4DFBE3229C26CE00D3722E /* 7.png in Resources */,
+				ED4DFBD4229C205500D3722E /* Readme.md in Resources */,
 				ED735E0022933F8E004D60D3 /* LaunchScreen.storyboard in Resources */,
+				ED4DFBDE229C26CE00D3722E /* 2.png in Resources */,
 				ED735E082293421E004D60D3 /* GoogleService-Info.plist in Resources */,
+				ED4DFBE2229C26CE00D3722E /* 6.png in Resources */,
+				ED4DFBE1229C26CE00D3722E /* 4.png in Resources */,
 				ED735DFD22933F8E004D60D3 /* Assets.xcassets in Resources */,
+				ED4DFBE0229C26CE00D3722E /* 3.png in Resources */,
 				ED735DFB22933F8A004D60D3 /* Main.storyboard in Resources */,
+				ED4DFBDF229C26CE00D3722E /* 1.png in Resources */,
+				ED4DFBDD229C26CE00D3722E /* 5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +304,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED735DF822933F8A004D60D3 /* MapViewController.swift in Sources */,
-				ED4DFBD2229B5EC200D3722E /* TableViewCell.swift in Sources */,
 				ED735DF622933F8A004D60D3 /* AppDelegate.swift in Sources */,
 				ED8967472295D923004265E7 /* Room.swift in Sources */,
 				ED4DFBCB22984F5D00D3722E /* AddRoomViewController.swift in Sources */,

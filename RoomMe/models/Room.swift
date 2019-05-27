@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import Firebase
+
 public class Room {
-    var postCreationDate:Date?
+    var postCreationDate:Timestamp?
     var userName:String?
     var userEmail:String?
     var userPhoneNumber:Int?
@@ -21,7 +23,7 @@ public class Room {
     var roommatesGender:String?
     var allowedGender:String?
     var country:String?
-    var availabilityDate:Date?
+    var availabilityDate:Timestamp?
     var petsAllowed:Bool?
     var airConditioned:Bool?
     var numberOfBathrooms:Int?
@@ -39,8 +41,10 @@ public class Room {
     public init? (data:[String:Any]){
         
         
-        self.postCreationDate = data[Constants.postCreationDate] as? Date
+        self.postCreationDate = data[Constants.postCreationDate] as? Timestamp
         self.userName = data[Constants.userName] as? String
+        self.userPhoneNumber = data[Constants.userPhoneNumber] as? Int
+        self.userEmail = data[Constants.userEmail] as? String
         self.owningState = data[Constants.owningState] as? String
         self.lat = data[Constants.lat] as? Double
         self.long = data[Constants.long] as? Double
@@ -50,7 +54,7 @@ public class Room {
         self.roommatesGender = data[Constants.roommatesGender] as? String
         self.allowedGender = data[Constants.allowedGender] as? String
         self.country = data[Constants.country] as? String
-        self.availabilityDate = data[Constants.availabilityDate] as? Date
+        self.availabilityDate = data[Constants.availabilityDate] as? Timestamp
         self.petsAllowed = data[Constants.petsAllowed] as? Bool
         self.airConditioned = data[Constants.airConditioned] as? Bool
         self.numberOfBathrooms = data[Constants.numberOfBathrooms] as? Int
