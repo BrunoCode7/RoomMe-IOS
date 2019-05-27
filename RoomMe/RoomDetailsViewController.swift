@@ -52,49 +52,63 @@ class RoomDetailsViewController: UITableViewController {
     @IBOutlet weak var monthlyRentTitle: UILabel!
     @IBOutlet weak var monthlyRentValue: UILabel!
     
-    
-    
-    
-    
-    
-    
-    
     var room:Room!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(room.numberOfBathrooms!)
         populateTheTable(room: room)
         // Do any additional setup after loading the view.
     }
 
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
  
     }
     
     private func populateTheTable(room:Room){
         nameTitle.text = "Full Name"
-        nameValue.text = room.userName!
+        if let name = room.userName{
+            nameValue.text = name
+        }
         phoneTitle.text = "Phone No."
-        phoneValue.text = String(room.userPhoneNumber!)
+        if let phoneNumber = room.userPhoneNumber{
+            phoneValue.text = String(phoneNumber)
+        }
         emailTitle.text = "Email"
-        emailValue.text = room.userEmail!
+        if let email = room.userEmail{
+            emailValue.text = email
+        }
         owningStateTitle.text = "Owning State"
-        owningStateValue.text = room.owningState!
+        if let state = room.owningState{
+            owningStateValue.text = state
+        }
         apartmentNumberTitle.text = "Apartment No."
-        apartmentNumberValue.text = String(room.apartmentNumber!)
+        if let mApartmentNumber = room.apartmentNumber{
+            apartmentNumberValue.text = String(mApartmentNumber)
+        }
         numberOfBedsTitle.text = "No. Of Room Beds"
-        numberOFBedsValue.text = String(room.numberOfRoomBeds!)
+        if let mNumberOfBeds = room.numberOfRoomBeds{
+            numberOFBedsValue.text = String(mNumberOfBeds)
+        }
         numberOfBathroomsTitle.text = "No. of Bathrooms"
-        numberOfBathroomsValue.text = String(room.numberOfBathrooms!)
+        if let mNumberOfBathrooms = room.numberOfBathrooms{
+            numberOfBathroomsValue.text = String(mNumberOfBathrooms)
+        }
         numberOfRoommatesTitle.text = "No. Of Roommates"
-        numberOfRoommatesValue.text = String(room.numberOfRoommates!)
+        if let mNumberOfRoommates = room.numberOfRoommates {
+            numberOfRoommatesValue.text = String(mNumberOfRoommates)
+        }
         roommatesGenderTitle.text = "Roommates Gender"
-        roommatesGenderValue.text = room.roommatesGender!
+        if let mRoommatesGender = room.roommatesGender{
+            roommatesGenderValue.text = mRoommatesGender
+        }
         allowedGenderTitle.text = "Allowed Gender"
-        allowedGenderValue.text = room.allowedGender!
+        if let mAllowedGender = room.allowedGender{
+            allowedGenderValue.text = mAllowedGender
+
+        }
         availabilityDateTitle.text = "Available From"
         let dateFormater = DateFormatter()
         dateFormater.dateFormat = "MMM dd,yyyy"
@@ -115,11 +129,20 @@ class RoomDetailsViewController: UITableViewController {
         landlineTitle.text = "Landline"
         landlineValue.text = boolToYesNo(value: room.landlineAvailable!)
         subscribtionFeesTitle.text = "Subscribtion Fees"
-        subscribtionFeesValue.text = "\(Decimal(room.monthlySubscriptionFees!))"
+        if let mSubFees = room.monthlySubscriptionFees{
+            subscribtionFeesValue.text = "\(Decimal(mSubFees))"
+
+        }
         insuranceFeesTitle.text = "Insurance Fees"
-        insuranceFeesValue.text = "\(Decimal(room.insuranceFees!))"
+        if let mInsuranceFees = room.insuranceFees{
+            subscribtionFeesValue.text = "\(Decimal(mInsuranceFees))"
+            
+        }
         monthlyRentTitle.text = "Monthly Rent"
-        monthlyRentValue.text = "\(Decimal(room.monthlyRent!))"
+        if let mMonthlyRent = room.monthlyRent{
+            subscribtionFeesValue.text = "\(Decimal(mMonthlyRent))"
+            
+        }
         
         
         
@@ -134,15 +157,7 @@ class RoomDetailsViewController: UITableViewController {
             return "No"
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
     @IBAction func callButton(_ sender: Any) {
         if let phoneCallURL = URL(string: "telprompt://\(room.userPhoneNumber!)") {

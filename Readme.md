@@ -2,6 +2,14 @@
 
 - This is a roommate finder application, you can post your details and your apartment and room details and users can contact you if they got interested in your post.
 
+# How to build & run the App:
+
+1- Clone the Repo to your local machine
+
+2- Run RoomMe.xcworkspace file to open the project in Xcode
+
+3- Run the app on the simulator or your physical device
+
 # How to use:
 
 1- When you open the application you will see a map view, you can navigate the map with standard map view gestures, to add a room on the map, press and hold your room location on the map.
