@@ -8,26 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		7112A50AC8C9460AFD35412E /* Pods_RoomMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56554284046DB2D4E51C872 /* Pods_RoomMe.framework */; };
+		ED4DFBCB22984F5D00D3722E /* AddRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DFBCA22984F5D00D3722E /* AddRoomViewController.swift */; };
+		ED4DFBCE2299870900D3722E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DFBCD2299870900D3722E /* Constants.swift */; };
+		ED4DFBD0229B40C300D3722E /* RoomDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DFBCF229B40C300D3722E /* RoomDetailsViewController.swift */; };
+		ED4DFBD2229B5EC200D3722E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DFBD1229B5EC200D3722E /* TableViewCell.swift */; };
 		ED735DF622933F8A004D60D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED735DF522933F8A004D60D3 /* AppDelegate.swift */; };
-		ED735DF822933F8A004D60D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED735DF722933F8A004D60D3 /* ViewController.swift */; };
+		ED735DF822933F8A004D60D3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED735DF722933F8A004D60D3 /* MapViewController.swift */; };
 		ED735DFB22933F8A004D60D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED735DF922933F8A004D60D3 /* Main.storyboard */; };
 		ED735DFD22933F8E004D60D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED735DFC22933F8E004D60D3 /* Assets.xcassets */; };
 		ED735E0022933F8E004D60D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED735DFE22933F8E004D60D3 /* LaunchScreen.storyboard */; };
 		ED735E082293421E004D60D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED735E072293421E004D60D3 /* GoogleService-Info.plist */; };
+		ED8967452295D5E4004265E7 /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8967442295D5E4004265E7 /* FirebaseClient.swift */; };
+		ED8967472295D923004265E7 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8967462295D923004265E7 /* Room.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		547A606D9E0403F5180E233D /* Pods-RoomMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoomMe.debug.xcconfig"; path = "Target Support Files/Pods-RoomMe/Pods-RoomMe.debug.xcconfig"; sourceTree = "<group>"; };
 		9BF6FE938177AC43C8E9362B /* Pods-RoomMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoomMe.release.xcconfig"; path = "Target Support Files/Pods-RoomMe/Pods-RoomMe.release.xcconfig"; sourceTree = "<group>"; };
 		E56554284046DB2D4E51C872 /* Pods_RoomMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoomMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4DFBCA22984F5D00D3722E /* AddRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomViewController.swift; sourceTree = "<group>"; };
+		ED4DFBCD2299870900D3722E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ED4DFBCF229B40C300D3722E /* RoomDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailsViewController.swift; sourceTree = "<group>"; };
+		ED4DFBD1229B5EC200D3722E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		ED735DF222933F8A004D60D3 /* RoomMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoomMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED735DF522933F8A004D60D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED735DF722933F8A004D60D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED735DF722933F8A004D60D3 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		ED735DFA22933F8A004D60D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED735DFC22933F8E004D60D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED735DFF22933F8E004D60D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED735E0122933F8E004D60D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED735E072293421E004D60D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ED8967442295D5E4004265E7 /* FirebaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
+		ED8967462295D923004265E7 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +68,16 @@
 				547A606D9E0403F5180E233D /* Pods-RoomMe.debug.xcconfig */,
 				9BF6FE938177AC43C8E9362B /* Pods-RoomMe.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		ED4DFBCC229986F100D3722E /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				ED4DFBCD2299870900D3722E /* Constants.swift */,
+				ED4DFBD1229B5EC200D3722E /* TableViewCell.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 		ED735DE922933F8A004D60D3 = {
@@ -81,15 +101,36 @@
 		ED735DF422933F8A004D60D3 /* RoomMe */ = {
 			isa = PBXGroup;
 			children = (
+				ED4DFBCC229986F100D3722E /* utils */,
+				ED8967432295D5B3004265E7 /* Clients */,
+				ED8967422295D596004265E7 /* models */,
 				ED735DF522933F8A004D60D3 /* AppDelegate.swift */,
-				ED735DF722933F8A004D60D3 /* ViewController.swift */,
+				ED735DF722933F8A004D60D3 /* MapViewController.swift */,
 				ED735DF922933F8A004D60D3 /* Main.storyboard */,
 				ED735DFC22933F8E004D60D3 /* Assets.xcassets */,
 				ED735DFE22933F8E004D60D3 /* LaunchScreen.storyboard */,
 				ED735E0122933F8E004D60D3 /* Info.plist */,
 				ED735E072293421E004D60D3 /* GoogleService-Info.plist */,
+				ED4DFBCA22984F5D00D3722E /* AddRoomViewController.swift */,
+				ED4DFBCF229B40C300D3722E /* RoomDetailsViewController.swift */,
 			);
 			path = RoomMe;
+			sourceTree = "<group>";
+		};
+		ED8967422295D596004265E7 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				ED8967462295D923004265E7 /* Room.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		ED8967432295D5B3004265E7 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				ED8967442295D5E4004265E7 /* FirebaseClient.swift */,
+			);
+			path = Clients;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,14 +234,24 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RoomMe/Pods-RoomMe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,8 +266,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED735DF822933F8A004D60D3 /* ViewController.swift in Sources */,
+				ED735DF822933F8A004D60D3 /* MapViewController.swift in Sources */,
+				ED4DFBD2229B5EC200D3722E /* TableViewCell.swift in Sources */,
 				ED735DF622933F8A004D60D3 /* AppDelegate.swift in Sources */,
+				ED8967472295D923004265E7 /* Room.swift in Sources */,
+				ED4DFBCB22984F5D00D3722E /* AddRoomViewController.swift in Sources */,
+				ED8967452295D5E4004265E7 /* FirebaseClient.swift in Sources */,
+				ED4DFBD0229B40C300D3722E /* RoomDetailsViewController.swift in Sources */,
+				ED4DFBCE2299870900D3722E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

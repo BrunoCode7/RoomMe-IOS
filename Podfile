@@ -6,5 +6,6 @@ target 'RoomMe' do
   use_frameworks!
 
   # Pods for RoomMe
-  pod 'Firebase/Core'	
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'	
 end
