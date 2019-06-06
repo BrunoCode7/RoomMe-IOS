@@ -13,7 +13,7 @@ public class Room {
     var postCreationDate:Timestamp?
     var userName:String?
     var userEmail:String?
-    var userPhoneNumber:Int?
+    var userPhoneNumber:String?
     var owningState:String?
     var lat:Double?
     var long:Double?
@@ -43,7 +43,7 @@ public class Room {
         
         self.postCreationDate = data[Constants.postCreationDate] as? Timestamp
         self.userName = data[Constants.userName] as? String
-        self.userPhoneNumber = data[Constants.userPhoneNumber] as? Int
+        self.userPhoneNumber = data[Constants.userPhoneNumber] as? String
         self.userEmail = data[Constants.userEmail] as? String
         self.owningState = data[Constants.owningState] as? String
         self.lat = data[Constants.lat] as? Double

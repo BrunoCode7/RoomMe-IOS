@@ -7,5 +7,7 @@ target 'RoomMe' do
 
   # Pods for RoomMe
   pod 'Firebase/Core'
-  pod 'Firebase/Firestore'	
+  pod 'Firebase/Firestore'
+  pod 'FirebaseUI'
+
 end
