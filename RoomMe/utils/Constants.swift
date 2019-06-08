@@ -12,6 +12,8 @@ public struct Constants{
     static let userName = "userName"
     static let userPhoneNumber = "userPhoneNumber"
     static let userEmail = "userEmail"
+    static let userUid = "userUid"
+    static let userProfilePicUrl = "userProfilePicUrl"
     static let roommatesGender = "roommatesGender"
     static let owningState = "owningState"
     static let postCreationDate = "postCreationDate"

@@ -13,6 +13,8 @@ public class Room {
     var postCreationDate:Timestamp?
     var userName:String?
     var userEmail:String?
+    var userUid:String?
+    var userProfilePicUrl:String?
     var userPhoneNumber:String?
     var owningState:String?
     var lat:Double?
@@ -45,6 +47,8 @@ public class Room {
         self.userName = data[Constants.userName] as? String
         self.userPhoneNumber = data[Constants.userPhoneNumber] as? String
         self.userEmail = data[Constants.userEmail] as? String
+        self.userUid = data[Constants.userUid] as? String
+        self.userProfilePicUrl = data[Constants.userProfilePicUrl] as? String
         self.owningState = data[Constants.owningState] as? String
         self.lat = data[Constants.lat] as? Double
         self.long = data[Constants.long] as? Double

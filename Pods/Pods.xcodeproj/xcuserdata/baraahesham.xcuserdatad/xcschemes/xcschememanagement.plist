@@ -193,6 +193,20 @@
 			<key>orderHint</key>
 			<integer>31</integer>
 		</dict>
+		<key>TwitterCore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>32</integer>
+		</dict>
+		<key>TwitterKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>33</integer>
+		</dict>
 		<key>gRPC-C++-gRPCCertificates.xcscheme</key>
 		<dict>
 			<key>isShown</key>

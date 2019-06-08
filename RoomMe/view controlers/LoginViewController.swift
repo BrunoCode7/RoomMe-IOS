@@ -13,8 +13,12 @@ import FirebaseUI
 import GoogleSignIn
 import FBSDKCoreKit
 import FBSDKLoginKit
+import TwitterKit
 
 class LoginViewController: UIViewController, FUIAuthDelegate  {
+    
+    
+    
     func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
         if error == nil{
             // user signed in
@@ -41,16 +45,6 @@ class LoginViewController: UIViewController, FUIAuthDelegate  {
 //            }
 //        }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     @IBAction func loginNow(_ sender: Any) {
         
@@ -58,6 +52,7 @@ class LoginViewController: UIViewController, FUIAuthDelegate  {
         // You need to adopt a FUIAuthDelegate protocol to receive callback
         authUI!.delegate = self
         let providers: [FUIAuthProvider] = [
+        
             FUIFacebookAuth(),
             FUIGoogleAuth()]
         authUI!.providers = providers

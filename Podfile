@@ -9,5 +9,7 @@ target 'RoomMe' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'FirebaseUI'
+  pod 'TwitterKit'
+  pod 'Firebase/Auth'
 
 end

@@ -10,18 +10,15 @@ import UIKit
 import Firebase
 import MapKit
 
-
 class AddRoomViewController: UITableViewController,UIPickerViewDelegate, UIPickerViewDataSource{
     
     
     @IBOutlet weak var postButton: UIButton!
-    @IBOutlet weak var fullNameTextField: UITextField!
     @IBOutlet weak var owningStatePickerView: UIPickerView!
     @IBOutlet weak var allowedGenderPickerView: UIPickerView!
     @IBOutlet weak var roommatesGenderPickerView: UIPickerView!
     @IBOutlet weak var availableFromDatePickerView: UIDatePicker!
     
-    @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPhoneNumberTextField: UITextField!
     @IBOutlet weak var apartmentNumberTextField: UITextField!
     @IBOutlet weak var numberOfRoommatesTextField: UITextField!
@@ -49,6 +46,7 @@ class AddRoomViewController: UITableViewController,UIPickerViewDelegate, UIPicke
     var lat = Double()
     var long = Double()
     let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView.init(style: .gray)
+    let user = Auth.auth().currentUser
     
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -108,13 +106,28 @@ class AddRoomViewController: UITableViewController,UIPickerViewDelegate, UIPicke
         
         activityIndicator.isHidden = false
         
-        //Full name
-        if let name = fullNameTextField.text?.trimmingCharacters(in: .whitespaces), !name.isEmpty{
-            roomDictionary[Constants.userName] = name
-        }else{
-            showSimpleAlert(title: "Data missing", message: "Please add your full name")
-            self.activityIndicator.isHidden = true
+        // get user info from firebase
+        
+        guard let username = user?.displayName,let userEmail = user?.email, let userUid = user?.uid, let userProfilePic = user?.photoURL else {
+            showSimpleAlert(title: "Error", message: "Failed to get poster data")
             return
+        }
+        
+        //Full name
+            roomDictionary[Constants.userName] = username
+        
+        //user Email
+            roomDictionary[Constants.userEmail] = userEmail
+       
+        //user UID
+            roomDictionary[Constants.userUid] = userUid
+        
+        //user profile picture URL
+        do{
+         let photoUrlString = try String(contentsOf:userProfilePic)
+            roomDictionary[Constants.userProfilePicUrl] = photoUrlString
+        }catch{
+            print(error.localizedDescription)
         }
         
         //user phone number
@@ -126,14 +139,7 @@ class AddRoomViewController: UITableViewController,UIPickerViewDelegate, UIPicke
             return
         }
         
-        //user Email
-        if let userEmail = userEmailTextField.text?.trimmingCharacters(in: .whitespaces), !userEmail.isEmpty{
-            roomDictionary[Constants.userEmail] = userEmail
-        }else{
-            showSimpleAlert(title: "Data missing", message: "Please add your Email")
-            self.activityIndicator.isHidden = true
-            return
-        }
+
         
         //owner state
         roomDictionary[Constants.owningState] = owningStates[owningStatePickerView.selectedRow(inComponent: 0)]
